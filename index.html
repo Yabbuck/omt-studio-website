@@ -56,66 +56,122 @@
 
       <div class="technical-art" role="img" aria-label="Technical illustration showing an OMT source routed through a network to monitoring and receiver endpoints">
         <div class="art-heading">
-          <span>OMT / SIGNAL FLOW</span>
-          <span class="art-live"><i></i> LOCAL NETWORK</span>
+          <span>ANDROID / OMT ROUTING</span>
+          <span class="art-live"><i></i> BIDIRECTIONAL</span>
         </div>
 
         <svg class="network-art" viewBox="0 0 560 390" fill="none" aria-hidden="true">
           <defs>
-            <linearGradient id="omtGradient" x1="86" y1="204" x2="474" y2="198" gradientUnits="userSpaceOnUse">
+            <linearGradient id="omtGradient" x1="54" y1="154" x2="506" y2="154" gradientUnits="userSpaceOnUse">
               <stop stop-color="#4ff6ff"/>
-              <stop offset=".48" stop-color="#149cff"/>
+              <stop offset=".5" stop-color="#149cff"/>
               <stop offset="1" stop-color="#3157ff"/>
             </linearGradient>
-            <linearGradient id="softFill" x1="96" y1="123" x2="454" y2="283" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#4ff6ff" stop-opacity=".15"/>
-              <stop offset=".55" stop-color="#149cff" stop-opacity=".08"/>
-              <stop offset="1" stop-color="#3157ff" stop-opacity=".02"/>
+            <linearGradient id="sendGradient" x1="219" y1="252" x2="505" y2="252" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#35dfff"/>
+              <stop offset="1" stop-color="#3157ff"/>
+            </linearGradient>
+            <linearGradient id="deviceFill" x1="208" y1="82" x2="378" y2="302" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1c2e3b"/>
+              <stop offset="1" stop-color="#131b25"/>
+            </linearGradient>
+            <linearGradient id="screenFill" x1="226" y1="112" x2="358" y2="258" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#153a4c"/>
+              <stop offset=".6" stop-color="#15283d"/>
+              <stop offset="1" stop-color="#17203a"/>
             </linearGradient>
             <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
               <path d="M28 0H0V28" stroke="#ffffff" stroke-opacity=".035"/>
             </pattern>
-            <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
+            <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
               <feGaussianBlur stdDeviation="5"/>
             </filter>
+            <marker id="arrowCyan" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+              <path d="M0 0L8 4L0 8Z" fill="#43eaff"/>
+            </marker>
+            <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+              <path d="M0 0L8 4L0 8Z" fill="#4d73ff"/>
+            </marker>
           </defs>
 
           <rect width="560" height="390" fill="url(#grid)"/>
-          <path d="M118 197H442" stroke="url(#omtGradient)" stroke-width="2"/>
-          <path d="M205 197C245 151 302 151 344 197C383 240 418 240 442 240" stroke="#28baff" stroke-opacity=".24" stroke-dasharray="4 8"/>
-          <path d="M205 197C245 243 302 243 344 197C383 154 418 154 442 154" stroke="#28baff" stroke-opacity=".14" stroke-dasharray="4 8"/>
 
-          <circle cx="118" cy="197" r="44" fill="#182632" stroke="#50efff" stroke-opacity=".62"/>
-          <circle cx="118" cy="197" r="28" fill="url(#softFill)" stroke="#73f7ff" stroke-opacity=".26"/>
-          <path d="M104 184h28v21h-28z" stroke="#c8fbff" stroke-width="1.4"/>
-          <path d="m132 190 11-6v21l-11-6" stroke="#c8fbff" stroke-width="1.4"/>
-          <circle cx="118" cy="197" r="4" fill="#66f5ff"/>
-          <circle cx="118" cy="197" r="9" fill="#37dff0" opacity=".25" filter="url(#glow)"/>
+          <g>
+            <rect x="42" y="92" width="108" height="58" rx="8" fill="#151f29" stroke="#3bd8ef" stroke-opacity=".34"/>
+            <rect x="55" y="104" width="48" height="30" rx="3" fill="#162d39" stroke="#67eaf5" stroke-opacity=".45"/>
+            <path d="M61 127l10-9 8 6 8-10 10 13" stroke="#62e7f2" stroke-opacity=".65" stroke-width="1.2"/>
+            <circle cx="94" cy="111" r="2.5" fill="#67eff8"/>
+            <text x="111" y="113" fill="#9db0ba" font-family="monospace" font-size="7.5" letter-spacing=".8">OMT</text>
+            <text x="111" y="125" fill="#6e8793" font-family="monospace" font-size="6.5" letter-spacing=".5">SOURCE A</text>
+            <text x="111" y="137" fill="#4e6d7d" font-family="monospace" font-size="6.5" letter-spacing=".5">VIDEO</text>
 
-          <rect x="222" y="147" width="116" height="100" rx="10" fill="#151d27" stroke="#ffffff" stroke-opacity=".09"/>
-          <path d="M244 178h72M244 195h72M244 212h47" stroke="#6f8497" stroke-opacity=".7"/>
-          <circle cx="316" cy="212" r="4" fill="#41d9ff"/>
-          <text x="245" y="167" fill="#a7b6c3" font-family="monospace" font-size="9" letter-spacing="1.5">OMT TRANSPORT</text>
-          <text x="245" y="232" fill="#568298" font-family="monospace" font-size="8" letter-spacing="1.2">LOCAL / TCP</text>
+            <rect x="42" y="166" width="108" height="58" rx="8" fill="#151f29" stroke="#249bc9" stroke-opacity=".30"/>
+            <rect x="55" y="178" width="48" height="30" rx="3" fill="#162936" stroke="#4fc7e6" stroke-opacity=".35"/>
+            <path d="M61 199h8l5-12 7 21 7-15 5 6h5" stroke="#55cfe9" stroke-opacity=".58" stroke-width="1.2"/>
+            <text x="111" y="187" fill="#9db0ba" font-family="monospace" font-size="7.5" letter-spacing=".8">OMT</text>
+            <text x="111" y="199" fill="#6e8793" font-family="monospace" font-size="6.5" letter-spacing=".5">SOURCE B</text>
+            <text x="111" y="211" fill="#4e6d7d" font-family="monospace" font-size="6.5" letter-spacing=".5">A/V</text>
+          </g>
 
-          <rect x="404" y="105" width="92" height="74" rx="8" fill="#161f2a" stroke="#2dc6ff" stroke-opacity=".42"/>
-          <rect x="416" y="117" width="68" height="38" rx="2" fill="url(#softFill)" stroke="#6edfff" stroke-opacity=".24"/>
-          <path d="M438 164h24" stroke="#7f92a3"/>
-          <path d="M450 155v9" stroke="#7f92a3"/>
-          <text x="424" y="97" fill="#91a5b6" font-family="monospace" font-size="8" letter-spacing="1.1">MONITOR</text>
+          <g>
+            <rect x="205" y="71" width="164" height="232" rx="18" fill="url(#deviceFill)" stroke="#63e9fa" stroke-opacity=".52"/>
+            <circle cx="287" cy="84" r="2.5" fill="#546b79"/>
+            <rect x="220" y="98" width="134" height="176" rx="8" fill="url(#screenFill)" stroke="#ffffff" stroke-opacity=".08"/>
 
-          <rect x="404" y="215" width="92" height="74" rx="8" fill="#161f2a" stroke="#3157ff" stroke-opacity=".48"/>
-          <path d="M424 234h52v34h-52z" stroke="#8298ff" stroke-opacity=".72"/>
-          <path d="m476 244 12-7v27l-12-7" stroke="#8298ff" stroke-opacity=".72"/>
-          <text x="421" y="309" fill="#91a5b6" font-family="monospace" font-size="8" letter-spacing="1.1">RECEIVER</text>
+            <rect x="235" y="114" width="104" height="74" rx="4" fill="#102532" stroke="#43def1" stroke-opacity=".28"/>
+            <path d="M245 167l20-21 17 12 15-20 31 29" stroke="#51e7f3" stroke-opacity=".55" stroke-width="1.4"/>
+            <circle cx="316" cy="129" r="5" fill="#45e6f3" opacity=".18" filter="url(#glow)"/>
+            <circle cx="316" cy="129" r="2.5" fill="#69f3fb"/>
+            <text x="235" y="205" fill="#8ca1ad" font-family="monospace" font-size="7.5" letter-spacing="1">MONITOR MODE</text>
+            <text x="235" y="220" fill="#5aa9bf" font-family="monospace" font-size="6.8" letter-spacing=".8">RECEIVE + VIEW</text>
+            <path d="M235 238h104" stroke="#ffffff" stroke-opacity=".08"/>
+            <circle cx="244" cy="254" r="3" fill="#47dcf0"/>
+            <text x="254" y="257" fill="#6f8997" font-family="monospace" font-size="6.8" letter-spacing=".7">LOCAL OMT</text>
 
-          <path d="M338 180h34c14 0 20-10 32-22" stroke="#28caff" stroke-opacity=".52"/>
-          <path d="M338 214h34c14 0 20 10 32 22" stroke="#3464ff" stroke-opacity=".52"/>
-          <circle cx="371" cy="180" r="3" fill="#3ad8ff"/>
-          <circle cx="371" cy="214" r="3" fill="#5272ff"/>
+            <rect x="338" y="177" width="72" height="139" rx="14" fill="#121a24" stroke="#3157ff" stroke-opacity=".6"/>
+            <circle cx="374" cy="189" r="2.2" fill="#526b7d"/>
+            <rect x="346" y="200" width="56" height="92" rx="6" fill="#151f35" stroke="#4b6df0" stroke-opacity=".22"/>
+            <circle cx="374" cy="239" r="18" stroke="#5c7cff" stroke-opacity=".65"/>
+            <circle cx="374" cy="239" r="7" fill="#3157ff" fill-opacity=".24" stroke="#7890ff" stroke-opacity=".8"/>
+            <circle cx="379" cy="234" r="2.4" fill="#9bafff"/>
+            <text x="352" y="305" fill="#73889b" font-family="monospace" font-size="6.5" letter-spacing=".7">CAMERA</text>
 
-          <text x="77" y="264" fill="#8ea2b2" font-family="monospace" font-size="8" letter-spacing="1.2">ANDROID SOURCE</text>
-          <text x="75" y="278" fill="#4e6d7d" font-family="monospace" font-size="7" letter-spacing="1">VIDEO + AUDIO</text>
+            <text x="247" y="326" fill="#a3b7c2" font-family="monospace" font-size="8" letter-spacing="1.2">ANDROID DEVICE</text>
+            <text x="252" y="340" fill="#57717f" font-family="monospace" font-size="7" letter-spacing=".9">PHONE / TABLET</text>
+          </g>
+
+          <path d="M150 154H198" stroke="url(#omtGradient)" stroke-width="2" marker-end="url(#arrowCyan)"/>
+          <path d="M150 195H174c14 0 18-18 31-18" stroke="#28baff" stroke-opacity=".42" stroke-width="1.4"/>
+          <circle cx="165" cy="154" r="3" fill="#49e9f5"/>
+          <circle cx="180" cy="154" r="3" fill="#39cfea"/>
+          <text x="153" y="139" fill="#66c9df" font-family="monospace" font-size="6.8" letter-spacing=".7">RECEIVE</text>
+
+          <g>
+            <rect x="445" y="105" width="75" height="54" rx="7" fill="#151f2a" stroke="#3157ff" stroke-opacity=".44"/>
+            <rect x="455" y="115" width="55" height="28" rx="2" fill="#16223b" stroke="#6d85ff" stroke-opacity=".35"/>
+            <path d="M469 151h27" stroke="#728391"/>
+            <path d="M482 143v8" stroke="#728391"/>
+            <text x="456" y="94" fill="#8da2b0" font-family="monospace" font-size="6.8" letter-spacing=".8">OMT RECEIVER</text>
+
+            <rect x="445" y="205" width="75" height="54" rx="7" fill="#151f2a" stroke="#3157ff" stroke-opacity=".44"/>
+            <rect x="455" y="215" width="55" height="28" rx="2" fill="#16223b" stroke="#6d85ff" stroke-opacity=".35"/>
+            <path d="M469 251h27" stroke="#728391"/>
+            <path d="M482 243v8" stroke="#728391"/>
+            <text x="456" y="279" fill="#8da2b0" font-family="monospace" font-size="6.8" letter-spacing=".8">OMT RECEIVER</text>
+          </g>
+
+          <path d="M410 239H421 Q424 239 426.5 234.5 L462.5 163.5 Q465 159 469 159 H496" stroke="url(#sendGradient)" stroke-width="1.8" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
+          <path d="M410 248H430c10 0 13 10 20 10h20" stroke="url(#sendGradient)" stroke-width="1.8" marker-end="url(#arrowBlue)"/>
+          <circle cx="424" cy="244" r="3" fill="#4c73ff"/>
+          <text x="418" y="226" fill="#718bff" font-family="monospace" font-size="6.8" letter-spacing=".7">SEND</text>
+
+          <rect x="45" y="300" width="114" height="29" rx="5" fill="#10202a" stroke="#34d7eb" stroke-opacity=".18"/>
+          <circle cx="58" cy="314.5" r="3" fill="#43e5f0"/>
+          <text x="68" y="317" fill="#7ca4b4" font-family="monospace" font-size="6.8" letter-spacing=".8">MONITOR: IN</text>
+
+          <rect x="430" y="300" width="87" height="29" rx="5" fill="#111a2a" stroke="#4b69ff" stroke-opacity=".22"/>
+          <circle cx="443" cy="314.5" r="3" fill="#5272ff"/>
+          <text x="453" y="317" fill="#8392c8" font-family="monospace" font-size="6.8" letter-spacing=".8">CAMERA: OUT</text>
         </svg>
 
         <div class="signal-strip">
