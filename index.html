@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="OMT Studio is an Android app in development for monitoring and sending Open Media Transport video and audio.">
+  <meta name="theme-color" content="#10151d">
+  <title>OMT Studio — Open Media Transport tools for Android</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="OMT Studio home">
+      <span class="brand-mark" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+      <span class="brand-wordmark">OMT <b>STUDIO</b></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#monitor">Monitor</a>
+      <a href="#camera">Camera</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> OPEN MEDIA TRANSPORT / ANDROID</p>
+        <div class="hero-wordmark" aria-label="OMT Studio">
+          <span class="hero-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>OMT <b>STUDIO</b></span>
+        </div>
+
+        <h1>Monitor. Send.<br><span>OMT on Android.</span></h1>
+
+        <p class="hero-description">
+          OMT Studio is an Android app in development for working with Open Media Transport
+          sources on the local network — from monitoring incoming signals to using an Android
+          device as a camera source.
+        </p>
+
+        <div class="release-status">
+          <span class="release-icon" aria-hidden="true">◇</span>
+          <span>Currently in development</span>
+          <span class="soon-label">EARLY STAGE</span>
+        </div>
+
+        <a class="text-link hero-link" href="#modules">Explore the concept <span aria-hidden="true">↓</span></a>
+      </div>
+
+      <div class="technical-art" role="img" aria-label="Technical illustration showing an OMT source routed through a network to monitoring and receiver endpoints">
+        <div class="art-heading">
+          <span>OMT / SIGNAL FLOW</span>
+          <span class="art-live"><i></i> LOCAL NETWORK</span>
+        </div>
+
+        <svg class="network-art" viewBox="0 0 560 390" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="omtGradient" x1="86" y1="204" x2="474" y2="198" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#4ff6ff"/>
+              <stop offset=".48" stop-color="#149cff"/>
+              <stop offset="1" stop-color="#3157ff"/>
+            </linearGradient>
+            <linearGradient id="softFill" x1="96" y1="123" x2="454" y2="283" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#4ff6ff" stop-opacity=".15"/>
+              <stop offset=".55" stop-color="#149cff" stop-opacity=".08"/>
+              <stop offset="1" stop-color="#3157ff" stop-opacity=".02"/>
+            </linearGradient>
+            <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+              <path d="M28 0H0V28" stroke="#ffffff" stroke-opacity=".035"/>
+            </pattern>
+            <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
+              <feGaussianBlur stdDeviation="5"/>
+            </filter>
+          </defs>
+
+          <rect width="560" height="390" fill="url(#grid)"/>
+          <path d="M118 197H442" stroke="url(#omtGradient)" stroke-width="2"/>
+          <path d="M205 197C245 151 302 151 344 197C383 240 418 240 442 240" stroke="#28baff" stroke-opacity=".24" stroke-dasharray="4 8"/>
+          <path d="M205 197C245 243 302 243 344 197C383 154 418 154 442 154" stroke="#28baff" stroke-opacity=".14" stroke-dasharray="4 8"/>
+
+          <circle cx="118" cy="197" r="44" fill="#182632" stroke="#50efff" stroke-opacity=".62"/>
+          <circle cx="118" cy="197" r="28" fill="url(#softFill)" stroke="#73f7ff" stroke-opacity=".26"/>
+          <path d="M104 184h28v21h-28z" stroke="#c8fbff" stroke-width="1.4"/>
+          <path d="m132 190 11-6v21l-11-6" stroke="#c8fbff" stroke-width="1.4"/>
+          <circle cx="118" cy="197" r="4" fill="#66f5ff"/>
+          <circle cx="118" cy="197" r="9" fill="#37dff0" opacity=".25" filter="url(#glow)"/>
+
+          <rect x="222" y="147" width="116" height="100" rx="10" fill="#151d27" stroke="#ffffff" stroke-opacity=".09"/>
+          <path d="M244 178h72M244 195h72M244 212h47" stroke="#6f8497" stroke-opacity=".7"/>
+          <circle cx="316" cy="212" r="4" fill="#41d9ff"/>
+          <text x="245" y="167" fill="#a7b6c3" font-family="monospace" font-size="9" letter-spacing="1.5">OMT TRANSPORT</text>
+          <text x="245" y="232" fill="#568298" font-family="monospace" font-size="8" letter-spacing="1.2">LOCAL / TCP</text>
+
+          <rect x="404" y="105" width="92" height="74" rx="8" fill="#161f2a" stroke="#2dc6ff" stroke-opacity=".42"/>
+          <rect x="416" y="117" width="68" height="38" rx="2" fill="url(#softFill)" stroke="#6edfff" stroke-opacity=".24"/>
+          <path d="M438 164h24" stroke="#7f92a3"/>
+          <path d="M450 155v9" stroke="#7f92a3"/>
+          <text x="424" y="97" fill="#91a5b6" font-family="monospace" font-size="8" letter-spacing="1.1">MONITOR</text>
+
+          <rect x="404" y="215" width="92" height="74" rx="8" fill="#161f2a" stroke="#3157ff" stroke-opacity=".48"/>
+          <path d="M424 234h52v34h-52z" stroke="#8298ff" stroke-opacity=".72"/>
+          <path d="m476 244 12-7v27l-12-7" stroke="#8298ff" stroke-opacity=".72"/>
+          <text x="421" y="309" fill="#91a5b6" font-family="monospace" font-size="8" letter-spacing="1.1">RECEIVER</text>
+
+          <path d="M338 180h34c14 0 20-10 32-22" stroke="#28caff" stroke-opacity=".52"/>
+          <path d="M338 214h34c14 0 20 10 32 22" stroke="#3464ff" stroke-opacity=".52"/>
+          <circle cx="371" cy="180" r="3" fill="#3ad8ff"/>
+          <circle cx="371" cy="214" r="3" fill="#5272ff"/>
+
+          <text x="77" y="264" fill="#8ea2b2" font-family="monospace" font-size="8" letter-spacing="1.2">ANDROID SOURCE</text>
+          <text x="75" y="278" fill="#4e6d7d" font-family="monospace" font-size="7" letter-spacing="1">VIDEO + AUDIO</text>
+        </svg>
+
+        <div class="signal-strip">
+          <span>SIGNAL PATH</span>
+          <div class="signal-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <svg viewBox="0 0 100 24" fill="none" aria-hidden="true">
+            <path d="M0 12h18l7-8 10 16 10-16 10 16 10-8h35" stroke="url(#lineGradient)" stroke-width="1.5"/>
+            <defs><linearGradient id="lineGradient"><stop stop-color="#4ff6ff"/><stop offset="1" stop-color="#3157ff"/></linearGradient></defs>
+          </svg>
+        </div>
+
+        <div class="art-caption">
+          <span>DISCOVER · RECEIVE · SEND</span>
+          <span>↗</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modules-section section" id="modules">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">TWO SIDES OF THE SIGNAL</p>
+          <h2>One app. Two workflows.</h2>
+        </div>
+        <p>OMT Studio is being developed around two focused areas for Android.</p>
+      </div>
+
+      <div class="module-grid">
+        <article class="module-card" id="monitor">
+          <div class="module-top">
+            <span class="module-number">01</span>
+            <span class="module-state">IN DEVELOPMENT</span>
+          </div>
+          <div class="module-icon monitor-icon" aria-hidden="true">
+            <span></span>
+          </div>
+          <p class="eyebrow card-kicker">MONITOR</p>
+          <h3>See what's on the network.</h3>
+          <p class="card-description">
+            Discover OMT sources on the local network and receive them on an Android device for monitoring.
+          </p>
+          <ul class="feature-list">
+            <li>Source discovery</li>
+            <li>Video / audio receiving</li>
+            <li>Fullscreen monitoring</li>
+            <li>Diagnostics</li>
+          </ul>
+        </article>
+
+        <article class="module-card module-card-dark" id="camera">
+          <div class="module-top">
+            <span class="module-number">02</span>
+            <span class="module-state">PLANNED AREA</span>
+          </div>
+          <div class="module-icon camera-icon" aria-hidden="true">
+            <span></span>
+          </div>
+          <p class="eyebrow card-kicker">CAMERA</p>
+          <h3>Turn Android into a source.</h3>
+          <p class="card-description">
+            Use the device camera and microphone as an OMT source for compatible receivers on the network.
+          </p>
+          <ul class="feature-list">
+            <li>Android camera input</li>
+            <li>Microphone input</li>
+            <li>OMT source output</li>
+            <li>Receiver workflows</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="foundation-section section" id="about">
+    <div class="container foundation-grid">
+      <div>
+        <p class="eyebrow">FOUNDATION</p>
+        <h2>Built around the official OMT libraries.</h2>
+      </div>
+      <div class="library-panel">
+        <div class="library-row"><span>libomt</span><span>CORE</span></div>
+        <div class="library-row"><span>libomtnet</span><span>NETWORK</span></div>
+        <div class="library-row"><span>libvmx</span><span>VIDEO</span></div>
+        <p>OMT Studio is currently under active development. Product behavior and supported workflows may change before release.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing-section">
+    <div class="container closing-inner">
+      <div>
+        <p class="eyebrow">OMT STUDIO</p>
+        <h2>Signal tools, made for Android.</h2>
+        <p>Website and product currently in development.</p>
+      </div>
+      <div class="closing-signal" aria-hidden="true"><span></span><span></span><span></span></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="brand footer-brand">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="brand-wordmark">OMT <b>STUDIO</b></span>
+    </div>
+    <p>© 2026 OMT Studio · Preview concept</p>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>
