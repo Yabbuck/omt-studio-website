@@ -1,289 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="OMT Studio is an Android app in development for monitoring and sending Open Media Transport video and audio.">
-  <meta name="theme-color" content="#10151d">
-  <title>OMT Studio — Open Media Transport tools for Android</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="OMT monitoring and camera sending for Android." name="description"/>
+<meta content="#0e141b" name="theme-color"/>
+<title>OMT Studio — Receive or become the source</title>
+<link href="styles.css" rel="stylesheet"/></head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-
 <header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="OMT Studio home">
-      <span class="brand-mark" aria-hidden="true">
-        <span></span><span></span><span></span>
-      </span>
-      <span class="brand-wordmark">OMT <b>STUDIO</b></span>
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="#monitor">Monitor</a>
-      <a href="#camera">Camera</a>
-      <a href="#about">About</a>
-    </nav>
-  </div>
+<div class="container header-inner">
+<a aria-label="OMT Studio home" class="brand" href="index.html">
+<img alt="" class="header-mark" height="44" src="assets/portal.svg" width="44"/>
+</a>
+<nav aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="index.html#monitor">Monitor</a>
+<a href="index.html#camera">Camera</a>
+<a href="support.html">Support</a>
+</nav>
+</div>
 </header>
-
 <main id="main">
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> OPEN MEDIA TRANSPORT / ANDROID</p>
-        <div class="hero-wordmark" aria-label="OMT Studio">
-          <span class="hero-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-          <span>OMT <b>STUDIO</b></span>
-        </div>
-
-        <h1>Monitor. Send.<br><span>OMT on Android.</span></h1>
-
-        <p class="hero-description">
-          OMT Studio is an Android app in development for working with Open Media Transport
-          sources on the local network — from monitoring incoming signals to using an Android
-          device as a camera source.
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow"><span class="status-dot"></span> OPEN MEDIA TRANSPORT / ANDROID</p>
+<img alt="OMT Studio" class="hero-wordmark-img" src="assets/wordmark.svg"/>
+<h1>Receive — or<br/><span>become the source.</span></h1>
+<p class="hero-description">
+          Monitor OMT sources on the network, or turn the Android device in your hand into a camera source.
+          Two focused workflows in one app.
         </p>
-
-        <div class="release-status">
-          <span class="release-icon" aria-hidden="true">◇</span>
-          <span>Currently in development</span>
-          <span class="soon-label">EARLY STAGE</span>
-        </div>
-
-        <a class="text-link hero-link" href="#modules">Explore the concept <span aria-hidden="true">↓</span></a>
-      </div>
-
-      <div class="technical-art" role="img" aria-label="Technical illustration showing an OMT source routed through a network to monitoring and receiver endpoints">
-        <div class="art-heading">
-          <span>ANDROID / OMT ROUTING</span>
-          <span class="art-live"><i></i> BIDIRECTIONAL</span>
-        </div>
-
-        <svg class="network-art" viewBox="0 0 560 390" fill="none" aria-hidden="true">
-          <defs>
-            <linearGradient id="omtGradient" x1="54" y1="154" x2="506" y2="154" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#4ff6ff"/>
-              <stop offset=".5" stop-color="#149cff"/>
-              <stop offset="1" stop-color="#3157ff"/>
-            </linearGradient>
-            <linearGradient id="sendGradient" x1="219" y1="252" x2="505" y2="252" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#35dfff"/>
-              <stop offset="1" stop-color="#3157ff"/>
-            </linearGradient>
-            <linearGradient id="deviceFill" x1="208" y1="82" x2="378" y2="302" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#1c2e3b"/>
-              <stop offset="1" stop-color="#131b25"/>
-            </linearGradient>
-            <linearGradient id="screenFill" x1="226" y1="112" x2="358" y2="258" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#153a4c"/>
-              <stop offset=".6" stop-color="#15283d"/>
-              <stop offset="1" stop-color="#17203a"/>
-            </linearGradient>
-            <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-              <path d="M28 0H0V28" stroke="#ffffff" stroke-opacity=".035"/>
-            </pattern>
-            <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
-              <feGaussianBlur stdDeviation="5"/>
-            </filter>
-            <marker id="arrowCyan" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
-              <path d="M0 0L8 4L0 8Z" fill="#43eaff"/>
-            </marker>
-            <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
-              <path d="M0 0L8 4L0 8Z" fill="#4d73ff"/>
-            </marker>
-          </defs>
-
-          <rect width="560" height="390" fill="url(#grid)"/>
-
-          <g>
-            <rect x="42" y="92" width="108" height="58" rx="8" fill="#151f29" stroke="#3bd8ef" stroke-opacity=".34"/>
-            <rect x="55" y="104" width="48" height="30" rx="3" fill="#162d39" stroke="#67eaf5" stroke-opacity=".45"/>
-            <path d="M61 127l10-9 8 6 8-10 10 13" stroke="#62e7f2" stroke-opacity=".65" stroke-width="1.2"/>
-            <circle cx="94" cy="111" r="2.5" fill="#67eff8"/>
-            <text x="111" y="113" fill="#9db0ba" font-family="monospace" font-size="7.5" letter-spacing=".8">OMT</text>
-            <text x="111" y="125" fill="#6e8793" font-family="monospace" font-size="6.5" letter-spacing=".5">SOURCE A</text>
-            <text x="111" y="137" fill="#4e6d7d" font-family="monospace" font-size="6.5" letter-spacing=".5">VIDEO</text>
-
-            <rect x="42" y="166" width="108" height="58" rx="8" fill="#151f29" stroke="#249bc9" stroke-opacity=".30"/>
-            <rect x="55" y="178" width="48" height="30" rx="3" fill="#162936" stroke="#4fc7e6" stroke-opacity=".35"/>
-            <path d="M61 199h8l5-12 7 21 7-15 5 6h5" stroke="#55cfe9" stroke-opacity=".58" stroke-width="1.2"/>
-            <text x="111" y="187" fill="#9db0ba" font-family="monospace" font-size="7.5" letter-spacing=".8">OMT</text>
-            <text x="111" y="199" fill="#6e8793" font-family="monospace" font-size="6.5" letter-spacing=".5">SOURCE B</text>
-            <text x="111" y="211" fill="#4e6d7d" font-family="monospace" font-size="6.5" letter-spacing=".5">A/V</text>
-          </g>
-
-          <g>
-            <rect x="205" y="71" width="164" height="232" rx="18" fill="url(#deviceFill)" stroke="#63e9fa" stroke-opacity=".52"/>
-            <circle cx="287" cy="84" r="2.5" fill="#546b79"/>
-            <rect x="220" y="98" width="134" height="176" rx="8" fill="url(#screenFill)" stroke="#ffffff" stroke-opacity=".08"/>
-
-            <rect x="235" y="114" width="104" height="74" rx="4" fill="#102532" stroke="#43def1" stroke-opacity=".28"/>
-            <path d="M245 167l20-21 17 12 15-20 31 29" stroke="#51e7f3" stroke-opacity=".55" stroke-width="1.4"/>
-            <circle cx="316" cy="129" r="5" fill="#45e6f3" opacity=".18" filter="url(#glow)"/>
-            <circle cx="316" cy="129" r="2.5" fill="#69f3fb"/>
-            <text x="235" y="205" fill="#8ca1ad" font-family="monospace" font-size="7.5" letter-spacing="1">MONITOR MODE</text>
-            <text x="235" y="220" fill="#5aa9bf" font-family="monospace" font-size="6.8" letter-spacing=".8">RECEIVE + VIEW</text>
-            <path d="M235 238h104" stroke="#ffffff" stroke-opacity=".08"/>
-            <circle cx="244" cy="254" r="3" fill="#47dcf0"/>
-            <text x="254" y="257" fill="#6f8997" font-family="monospace" font-size="6.8" letter-spacing=".7">LOCAL OMT</text>
-
-            <rect x="338" y="177" width="72" height="139" rx="14" fill="#121a24" stroke="#3157ff" stroke-opacity=".6"/>
-            <circle cx="374" cy="189" r="2.2" fill="#526b7d"/>
-            <rect x="346" y="200" width="56" height="92" rx="6" fill="#151f35" stroke="#4b6df0" stroke-opacity=".22"/>
-            <circle cx="374" cy="239" r="18" stroke="#5c7cff" stroke-opacity=".65"/>
-            <circle cx="374" cy="239" r="7" fill="#3157ff" fill-opacity=".24" stroke="#7890ff" stroke-opacity=".8"/>
-            <circle cx="379" cy="234" r="2.4" fill="#9bafff"/>
-            <text x="352" y="305" fill="#73889b" font-family="monospace" font-size="6.5" letter-spacing=".7">CAMERA</text>
-
-            <text x="247" y="326" fill="#a3b7c2" font-family="monospace" font-size="8" letter-spacing="1.2">ANDROID DEVICE</text>
-            <text x="252" y="340" fill="#57717f" font-family="monospace" font-size="7" letter-spacing=".9">PHONE / TABLET</text>
-          </g>
-
-          <path d="M150 154H198" stroke="url(#omtGradient)" stroke-width="2" marker-end="url(#arrowCyan)"/>
-          <path d="M150 195H174c14 0 18-18 31-18" stroke="#28baff" stroke-opacity=".42" stroke-width="1.4"/>
-          <circle cx="165" cy="154" r="3" fill="#49e9f5"/>
-          <circle cx="180" cy="154" r="3" fill="#39cfea"/>
-          <text x="153" y="139" fill="#66c9df" font-family="monospace" font-size="6.8" letter-spacing=".7">RECEIVE</text>
-
-          <g>
-            <rect x="445" y="105" width="75" height="54" rx="7" fill="#151f2a" stroke="#3157ff" stroke-opacity=".44"/>
-            <rect x="455" y="115" width="55" height="28" rx="2" fill="#16223b" stroke="#6d85ff" stroke-opacity=".35"/>
-            <path d="M469 151h27" stroke="#728391"/>
-            <path d="M482 143v8" stroke="#728391"/>
-            <text x="456" y="94" fill="#8da2b0" font-family="monospace" font-size="6.8" letter-spacing=".8">OMT RECEIVER</text>
-
-            <rect x="445" y="205" width="75" height="54" rx="7" fill="#151f2a" stroke="#3157ff" stroke-opacity=".44"/>
-            <rect x="455" y="215" width="55" height="28" rx="2" fill="#16223b" stroke="#6d85ff" stroke-opacity=".35"/>
-            <path d="M469 251h27" stroke="#728391"/>
-            <path d="M482 243v8" stroke="#728391"/>
-            <text x="456" y="279" fill="#8da2b0" font-family="monospace" font-size="6.8" letter-spacing=".8">OMT RECEIVER</text>
-          </g>
-
-          <path d="M410 239H421 Q424 239 426.5 234.5 L462.5 163.5 Q465 159 469 159 H496" stroke="url(#sendGradient)" stroke-width="1.8" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
-          <path d="M410 248H430c10 0 13 10 20 10h20" stroke="url(#sendGradient)" stroke-width="1.8" marker-end="url(#arrowBlue)"/>
-          <circle cx="424" cy="244" r="3" fill="#4c73ff"/>
-          <text x="418" y="226" fill="#718bff" font-family="monospace" font-size="6.8" letter-spacing=".7">SEND</text>
-
-          <rect x="45" y="300" width="114" height="29" rx="5" fill="#10202a" stroke="#34d7eb" stroke-opacity=".18"/>
-          <circle cx="58" cy="314.5" r="3" fill="#43e5f0"/>
-          <text x="68" y="317" fill="#7ca4b4" font-family="monospace" font-size="6.8" letter-spacing=".8">MONITOR: IN</text>
-
-          <rect x="430" y="300" width="87" height="29" rx="5" fill="#111a2a" stroke="#4b69ff" stroke-opacity=".22"/>
-          <circle cx="443" cy="314.5" r="3" fill="#5272ff"/>
-          <text x="453" y="317" fill="#8392c8" font-family="monospace" font-size="6.8" letter-spacing=".8">CAMERA: OUT</text>
-        </svg>
-
-        <div class="signal-strip">
-          <span>SIGNAL PATH</span>
-          <div class="signal-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <svg viewBox="0 0 100 24" fill="none" aria-hidden="true">
-            <path d="M0 12h18l7-8 10 16 10-16 10 16 10-8h35" stroke="url(#lineGradient)" stroke-width="1.5"/>
-            <defs><linearGradient id="lineGradient"><stop stop-color="#4ff6ff"/><stop offset="1" stop-color="#3157ff"/></linearGradient></defs>
-          </svg>
-        </div>
-
-        <div class="art-caption">
-          <span>DISCOVER · RECEIVE · SEND</span>
-          <span>↗</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="modules-section section" id="modules">
-    <div class="container">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">TWO SIDES OF THE SIGNAL</p>
-          <h2>One app. Two workflows.</h2>
-        </div>
-        <p>OMT Studio is being developed around two focused areas for Android.</p>
-      </div>
-
-      <div class="module-grid">
-        <article class="module-card" id="monitor">
-          <div class="module-top">
-            <span class="module-number">01</span>
-            <span class="module-state">IN DEVELOPMENT</span>
-          </div>
-          <div class="module-icon monitor-icon" aria-hidden="true">
-            <span></span>
-          </div>
-          <p class="eyebrow card-kicker">MONITOR</p>
-          <h3>See what's on the network.</h3>
-          <p class="card-description">
-            Discover OMT sources on the local network and receive them on an Android device for monitoring.
-          </p>
-          <ul class="feature-list">
-            <li>Source discovery</li>
-            <li>Video / audio receiving</li>
-            <li>Fullscreen monitoring</li>
-            <li>Diagnostics</li>
-          </ul>
-        </article>
-
-        <article class="module-card module-card-dark" id="camera">
-          <div class="module-top">
-            <span class="module-number">02</span>
-            <span class="module-state">PLANNED AREA</span>
-          </div>
-          <div class="module-icon camera-icon" aria-hidden="true">
-            <span></span>
-          </div>
-          <p class="eyebrow card-kicker">CAMERA</p>
-          <h3>Turn Android into a source.</h3>
-          <p class="card-description">
-            Use the device camera and microphone as an OMT source for compatible receivers on the network.
-          </p>
-          <ul class="feature-list">
-            <li>Android camera input</li>
-            <li>Microphone input</li>
-            <li>OMT source output</li>
-            <li>Receiver workflows</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="foundation-section section" id="about">
-    <div class="container foundation-grid">
-      <div>
-        <p class="eyebrow">FOUNDATION</p>
-        <h2>Built around the official OMT libraries.</h2>
-      </div>
-      <div class="library-panel">
-        <div class="library-row"><span>libomt</span><span>CORE</span></div>
-        <div class="library-row"><span>libomtnet</span><span>NETWORK</span></div>
-        <div class="library-row"><span>libvmx</span><span>VIDEO</span></div>
-        <p>OMT Studio is currently under active development. Product behavior and supported workflows may change before release.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="closing-section">
-    <div class="container closing-inner">
-      <div>
-        <p class="eyebrow">OMT STUDIO</p>
-        <h2>Signal tools, made for Android.</h2>
-        <p>Website and product currently in development.</p>
-      </div>
-      <div class="closing-signal" aria-hidden="true"><span></span><span></span><span></span></div>
-    </div>
-  </section>
+<a class="text-link hero-link" href="#overview">Explore OMT Studio <span aria-hidden="true">↓</span></a>
+</div>
+<div aria-label="Interactive OMT Studio orb" class="hero-orb-stage" id="hero-orb-stage" role="img">
+<canvas aria-hidden="true" class="hero-orb-canvas" id="hero-orb-canvas"></canvas>
+<button aria-label="OMT Studio orb" class="web-orb" id="web-orb" type="button"><img alt="" class="web-orb-logo" src="assets/portal.svg"/></button>
+</div>
+</div>
+</section>
+<section class="overview-section section" id="overview">
+<div class="container overview-grid">
+<div class="overview-copy-block">
+<p class="eyebrow">MONITOR / CAMERA</p>
+<h2>Two ways to work with OMT.</h2>
+<p>Use Monitor when you need to receive and inspect an OMT source. Use Camera when the Android device itself should join the network as a source.</p>
+</div>
+<div aria-label="Technical illustration showing an OMT source routed through a network to monitoring and receiver endpoints" class="technical-art live-repo-hero-art" role="img">
+<div class="art-heading"><span>ANDROID / OMT ROUTING</span><span class="art-live"><i></i> BIDIRECTIONAL</span></div>
+<svg aria-hidden="true" class="network-art" fill="none" viewBox="0 0 560 390">
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" id="omtGradient" x1="54" x2="506" y1="154" y2="154"><stop stop-color="#4ff6ff"/><stop offset=".5" stop-color="#149cff"/><stop offset="1" stop-color="#3157ff"/></linearGradient>
+<linearGradient gradientUnits="userSpaceOnUse" id="sendGradient" x1="219" x2="505" y1="252" y2="252"><stop stop-color="#35dfff"/><stop offset="1" stop-color="#3157ff"/></linearGradient>
+<linearGradient gradientUnits="userSpaceOnUse" id="deviceFill" x1="208" x2="378" y1="82" y2="302"><stop stop-color="#1c2e3b"/><stop offset="1" stop-color="#131b25"/></linearGradient>
+<linearGradient gradientUnits="userSpaceOnUse" id="screenFill" x1="226" x2="358" y1="112" y2="258"><stop stop-color="#153a4c"/><stop offset=".6" stop-color="#15283d"/><stop offset="1" stop-color="#17203a"/></linearGradient>
+<pattern height="28" id="grid" patternUnits="userSpaceOnUse" width="28"><path d="M28 0H0V28" stroke="#ffffff" stroke-opacity=".035"/></pattern>
+<filter height="300%" id="glow" width="300%" x="-100%" y="-100%"><feGaussianBlur stdDeviation="5"/></filter>
+<marker id="arrowCyan" markerHeight="8" markerUnits="strokeWidth" markerWidth="8" orient="auto" refX="6" refY="4"><path d="M0 0L8 4L0 8Z" fill="#43eaff"/></marker>
+<marker id="arrowBlue" markerHeight="8" markerUnits="strokeWidth" markerWidth="8" orient="auto" refX="6" refY="4"><path d="M0 0L8 4L0 8Z" fill="#4d73ff"/></marker>
+</defs>
+<rect fill="url(#grid)" height="390" width="560"/>
+<g><rect fill="#151f29" height="58" rx="8" stroke="#3bd8ef" stroke-opacity=".34" width="108" x="42" y="92"/><rect fill="#162d39" height="30" rx="3" stroke="#67eaf5" stroke-opacity=".45" width="48" x="55" y="104"/><path d="M61 127l10-9 8 6 8-10 10 13" stroke="#62e7f2" stroke-opacity=".65" stroke-width="1.2"/><circle cx="94" cy="111" fill="#67eff8" r="2.5"/><text fill="#9db0ba" font-family="monospace" font-size="7.5" letter-spacing=".8" x="111" y="113">OMT</text><text fill="#6e8793" font-family="monospace" font-size="6.5" letter-spacing=".5" x="111" y="125">SOURCE A</text><text fill="#4e6d7d" font-family="monospace" font-size="6.5" letter-spacing=".5" x="111" y="137">VIDEO</text><rect fill="#151f29" height="58" rx="8" stroke="#249bc9" stroke-opacity=".30" width="108" x="42" y="166"/><rect fill="#162936" height="30" rx="3" stroke="#4fc7e6" stroke-opacity=".35" width="48" x="55" y="178"/><path d="M61 199h8l5-12 7 21 7-15 5 6h5" stroke="#55cfe9" stroke-opacity=".58" stroke-width="1.2"/><text fill="#9db0ba" font-family="monospace" font-size="7.5" letter-spacing=".8" x="111" y="187">OMT</text><text fill="#6e8793" font-family="monospace" font-size="6.5" letter-spacing=".5" x="111" y="199">SOURCE B</text><text fill="#4e6d7d" font-family="monospace" font-size="6.5" letter-spacing=".5" x="111" y="211">A/V</text></g>
+<g><rect fill="url(#deviceFill)" height="232" rx="18" stroke="#63e9fa" stroke-opacity=".52" width="164" x="205" y="71"/><circle cx="287" cy="84" fill="#546b79" r="2.5"/><rect fill="url(#screenFill)" height="176" rx="8" stroke="#ffffff" stroke-opacity=".08" width="134" x="220" y="98"/><rect fill="#102532" height="74" rx="4" stroke="#43def1" stroke-opacity=".28" width="104" x="235" y="114"/><path d="M245 167l20-21 17 12 15-20 31 29" stroke="#51e7f3" stroke-opacity=".55" stroke-width="1.4"/><circle cx="316" cy="129" fill="#45e6f3" filter="url(#glow)" opacity=".18" r="5"/><circle cx="316" cy="129" fill="#69f3fb" r="2.5"/><text fill="#8ca1ad" font-family="monospace" font-size="7.5" letter-spacing="1" x="235" y="205">MONITOR MODE</text><text fill="#5aa9bf" font-family="monospace" font-size="6.8" letter-spacing=".8" x="235" y="220">RECEIVE + VIEW</text><path d="M235 238h104" stroke="#ffffff" stroke-opacity=".08"/><circle cx="244" cy="254" fill="#47dcf0" r="3"/><text fill="#6f8997" font-family="monospace" font-size="6.8" letter-spacing=".7" x="254" y="257">LOCAL OMT</text><rect fill="#121a24" height="139" rx="14" stroke="#3157ff" stroke-opacity=".6" width="72" x="338" y="177"/><circle cx="374" cy="189" fill="#526b7d" r="2.2"/><rect fill="#151f35" height="92" rx="6" stroke="#4b6df0" stroke-opacity=".22" width="56" x="346" y="200"/><circle cx="374" cy="239" r="18" stroke="#5c7cff" stroke-opacity=".65"/><circle cx="374" cy="239" fill="#3157ff" fill-opacity=".24" r="7" stroke="#7890ff" stroke-opacity=".8"/><circle cx="379" cy="234" fill="#9bafff" r="2.4"/><text fill="#73889b" font-family="monospace" font-size="6.5" letter-spacing=".7" x="352" y="305">CAMERA</text><text fill="#a3b7c2" font-family="monospace" font-size="8" letter-spacing="1.2" x="247" y="326">ANDROID DEVICE</text><text fill="#57717f" font-family="monospace" font-size="7" letter-spacing=".9" x="252" y="340">PHONE / TABLET</text></g>
+<path d="M150 154H198" marker-end="url(#arrowCyan)" stroke="url(#omtGradient)" stroke-width="2"/><path d="M150 195H174c14 0 18-18 31-18" stroke="#28baff" stroke-opacity=".42" stroke-width="1.4"/><circle cx="165" cy="154" fill="#49e9f5" r="3"/><circle cx="180" cy="154" fill="#39cfea" r="3"/><text fill="#66c9df" font-family="monospace" font-size="6.8" letter-spacing=".7" x="153" y="139">RECEIVE</text>
+<g><rect fill="#151f2a" height="54" rx="7" stroke="#3157ff" stroke-opacity=".44" width="75" x="445" y="105"/><rect fill="#16223b" height="28" rx="2" stroke="#6d85ff" stroke-opacity=".35" width="55" x="455" y="115"/><path d="M469 151h27" stroke="#728391"/><path d="M482 143v8" stroke="#728391"/><text fill="#8da2b0" font-family="monospace" font-size="6.8" letter-spacing=".8" x="456" y="94">OMT RECEIVER</text><rect fill="#151f2a" height="54" rx="7" stroke="#3157ff" stroke-opacity=".44" width="75" x="445" y="205"/><rect fill="#16223b" height="28" rx="2" stroke="#6d85ff" stroke-opacity=".35" width="55" x="455" y="215"/><path d="M469 251h27" stroke="#728391"/><path d="M482 243v8" stroke="#728391"/><text fill="#8da2b0" font-family="monospace" font-size="6.8" letter-spacing=".8" x="456" y="279">OMT RECEIVER</text></g>
+<path d="M410 239H421 Q424 239 426.5 234.5 L462.5 163.5 Q465 159 469 159 H496" marker-end="url(#arrowBlue)" stroke="url(#sendGradient)" stroke-linecap="round" stroke-width="1.8"/><path d="M410 248H430c10 0 13 10 20 10h20" marker-end="url(#arrowBlue)" stroke="url(#sendGradient)" stroke-width="1.8"/><circle cx="424" cy="244" fill="#4c73ff" r="3"/><text fill="#718bff" font-family="monospace" font-size="6.8" letter-spacing=".7" x="418" y="226">SEND</text><rect fill="#10202a" height="29" rx="5" stroke="#34d7eb" stroke-opacity=".18" width="114" x="45" y="300"/><circle cx="58" cy="314.5" fill="#43e5f0" r="3"/><text fill="#7ca4b4" font-family="monospace" font-size="6.8" letter-spacing=".8" x="68" y="317">MONITOR: IN</text><rect fill="#111a2a" height="29" rx="5" stroke="#4b69ff" stroke-opacity=".22" width="87" x="430" y="300"/><circle cx="443" cy="314.5" fill="#5272ff" r="3"/><text fill="#8392c8" font-family="monospace" font-size="6.8" letter-spacing=".8" x="453" y="317">CAMERA: OUT</text>
+</svg>
+<div class="signal-strip"><span>SIGNAL PATH</span><div class="signal-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><svg aria-hidden="true" fill="none" viewBox="0 0 100 24"><path d="M0 12h18l7-8 10 16 10-16 10 16 10-8h35" stroke="url(#lineGradient)" stroke-width="1.5"/><defs><linearGradient id="lineGradient"><stop stop-color="#4ff6ff"/><stop offset="1" stop-color="#3157ff"/></linearGradient></defs></svg></div>
+<div class="art-caption"><span>DISCOVER · RECEIVE · SEND</span><span>↗</span></div>
+</div></div></section>
+<section class="product-section monitor-section section" id="monitor"><div class="container product-grid"><div class="product-copy"><p class="eyebrow">01 / MONITOR</p><h2>Monitor the signal.</h2><p class="product-lead">Find OMT sources on the local network and keep a practical view on video, audio and receive status.</p><ul class="product-features"><li>Local OMT source discovery</li><li>Preview / Full receive modes</li><li>Receive quality control</li><li>Audio monitoring</li><li>Fullscreen viewing</li><li>Live bitrate &amp; diagnostics</li><li>Portrait and landscape sources</li></ul></div><figure class="screen-slot monitor-shot"><div class="landscape-device"><div class="screen-placeholder"><span class="placeholder-kicker">MONITOR</span><strong>Landscape screenshot</strong><small>Drop the final app capture here.</small></div></div><figcaption>Monitor / landscape</figcaption></figure></div></section>
+<section class="product-section camera-section section" id="camera"><div class="container product-grid product-grid-reverse"><div class="product-copy"><p class="eyebrow">02 / CAMERA</p><h2>Become the source.</h2><p class="product-lead">The camera you already carry can become part of the production network — with OMT Studio handling capture, audio and sender control.</p><ul class="product-features"><li>Direct Camera2 capture</li><li>Device-aware resolution &amp; FPS</li><li>4K / UHD capture</li><li>Focus, exposure, shutter, ISO &amp; white balance</li><li>OMT sender quality control</li><li>Camera + microphone audio</li><li>OMT tally</li><li>Thermal Guard</li></ul></div><figure class="screen-slot camera-shot"><div class="portrait-device"><div class="screen-placeholder"><span class="placeholder-kicker">CAMERA</span><strong>Portrait screenshot</strong><small>Drop the final app capture here.</small></div></div><figcaption>Camera / portrait</figcaption></figure></div></section>
+<section class="foundation-section section" id="foundation"><div class="container foundation-grid"><div><p class="eyebrow">FOUNDATION</p><h2>Built around the official OMT libraries.</h2><p class="foundation-intro">The Android app uses the official OMT core rather than a separate compatibility layer.</p></div><div class="library-panel"><div class="library-row"><span>libomt</span><span>CORE</span></div><div class="library-row"><span>libomtnet</span><span>NETWORK</span></div><div class="library-row"><span>libvmx</span><span>VIDEO</span></div></div></div></section>
+<section class="privacy-section"><div class="container privacy-grid"><div><p class="eyebrow">LOCAL BY DESIGN</p><h2>Your production network stays your production network.</h2><a class="text-link" href="privacy.html">Read the privacy policy <span aria-hidden="true">↗</span></a></div><div class="privacy-copy"><p class="privacy-lead">No accounts. No ads. No analytics integration. No OMT Studio cloud backend.</p><p>OMT traffic and device discovery are handled on the local network. App settings remain on the Android device.</p></div></div></section>
+<section class="support-banner"><div class="container support-banner-inner"><div><p class="eyebrow">REAL WORKFLOWS</p><h2>Questions, bugs or feedback?</h2><p>Tell us what you’re trying to do, what got in the way, or what would make OMT Studio more useful on a real production.</p></div><a class="outline-link" href="support.html">Support &amp; feedback <span aria-hidden="true">↗</span></a></div></section>
 </main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="brand footer-brand">
-      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
-      <span class="brand-wordmark">OMT <b>STUDIO</b></span>
-    </div>
-    <p>© 2026 OMT Studio · Preview concept</p>
-  </div>
-</footer>
-
-<script src="site.js" defer></script>
-</body>
+<footer class="site-footer"><div class="container footer-inner"><div class="footer-brand-block"><a aria-label="OMT Studio home" class="brand footer-brand" href="index.html"><img alt="" class="footer-mark" height="34" src="assets/portal.svg" width="34"/><span>OMT Studio</span></a><p>OMT tools for Android.</p></div><div class="footer-right"><nav aria-label="Footer navigation"><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="imprint.html">Imprint</a></nav><p>© 2026 OMT Studio</p></div></div></footer>
+<script src="site.js"></script></body>
 </html>

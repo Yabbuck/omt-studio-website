@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="omtStudioPrimaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#36A7FF"/>
+      <stop offset="48%" stop-color="#159BFF"/>
+      <stop offset="100%" stop-color="#064AC8"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#omtStudioPrimaryGradient)" stroke-linecap="butt" stroke-linejoin="miter" shape-rendering="geometricPrecision">
+    <circle cx="512" cy="512" r="413.750" stroke-width="72.500"/>
+    <path d="M 512.000 225.750 A 286.250 286.250 0 1 0 798.250 512.000" stroke-width="67.500"/>
+    <path d="M 512.000 322.000 A 190.000 190.000 0 0 0 512.000 702.000" stroke-width="33.750"/>
+  </g>
+</svg>
