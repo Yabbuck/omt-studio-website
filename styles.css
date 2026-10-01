@@ -73,3 +73,11 @@
     margin-left:-69px;
   }
 }
+
+/* Raise the orb slightly on mobile so it is already visible in the initial viewport. */
+@media (max-width:760px){
+  .web-orb{bottom:170px !important;}
+}
+@media (max-width:520px){
+  .web-orb{bottom:156px !important;}
+}
