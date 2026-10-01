@@ -8,12 +8,27 @@
   ];
 
   for (const [href, label] of links){
-    if (nav.querySelector(`a[href="${href}"]`)) continue;
+    if (nav.querySelector(`a[href=\"${href}\"]`)) continue;
     const a = document.createElement('a');
     a.href = href;
     a.textContent = label;
     nav.append(a);
   }
+})();
+
+(() => {
+  const style = document.createElement('style');
+  style.textContent = `
+    /* Mobile-only hero refinement */
+    @media (max-width:760px){
+      .hero > .container.hero-grid{padding-top:24px !important;}
+      .web-orb{bottom:190px !important;touch-action:none !important;}
+    }
+    @media (max-width:520px){
+      .web-orb{bottom:176px !important;}
+    }
+  `;
+  document.head.append(style);
 })();
 
 (() => {
@@ -89,8 +104,10 @@
 
   function awaken(e){
     if (e && e.pointerId != null){
+      if (activePointer !== null && activePointer !== e.pointerId) return;
       activePointer = e.pointerId;
       try { orb.setPointerCapture(e.pointerId); } catch (_) {}
+      if (e.cancelable) e.preventDefault();
     }
     setActivation(1);
     spawnWave(.88,6.2);
@@ -98,15 +115,32 @@
 
   function sleep(e){
     if (e && activePointer !== null && e.pointerId != null && e.pointerId !== activePointer) return;
+    const pointerId = activePointer;
     activePointer = null;
+    if (pointerId !== null){
+      try {
+        if (orb.hasPointerCapture(pointerId)) orb.releasePointerCapture(pointerId);
+      } catch (_) {}
+    }
     setActivation(0);
   }
 
+  function keepHeld(e){
+    if (activePointer === null || e.pointerId !== activePointer) return;
+    if (e.cancelable) e.preventDefault();
+  }
+
+  function releaseHeldPointer(e){
+    if (activePointer === null || e.pointerId !== activePointer) return;
+    sleep(e);
+  }
+
   orb.addEventListener('pointerdown', awaken);
-  orb.addEventListener('pointerup', sleep);
-  orb.addEventListener('pointercancel', sleep);
-  orb.addEventListener('lostpointercapture', sleep);
+  orb.addEventListener('pointermove', keepHeld, {passive:false});
+  window.addEventListener('pointerup', releaseHeldPointer, true);
+  window.addEventListener('pointercancel', releaseHeldPointer, true);
   orb.addEventListener('contextmenu', e => e.preventDefault());
+  orb.addEventListener('dragstart', e => e.preventDefault());
   orb.addEventListener('keydown', e => {
     if ((e.key === ' ' || e.key === 'Enter') && !e.repeat){
       e.preventDefault();
